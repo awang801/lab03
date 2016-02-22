@@ -1,0 +1,58 @@
+<html>
+<head>
+<script type="text/javascript">
+var image = new Array();
+image[1] = new Image()
+image[1].src = "http://i.imgur.com/xj6TRPN.jpg"
+image[2] = new Image()
+image[2].src = "http://i.imgur.com/jeP418Y.jpg"
+image[3] = new Image()
+image[3].src = "http://i.imgur.com/haEpwJs.jpg"
+image[4] = new Image()
+image[4].src = "http://i.imgur.com/xSpZ5LC.jpg"
+image[5] = new Image()
+image[5].src = "http://i.imgur.com/xy79IiM.jpg"
+
+</script>
+</head>
+<body>
+<p><img src="http://i.imgur.com/xj6TRPN.jpg" width="500" height="300" id="slide" /></p>
+
+<br> <button type="button" onclick = "forward()" >Forward</button>
+<button type="button" onclick = "backward()" > Back</button>
+
+<script type="text/javascript">
+        var step=1;
+        function forward()
+        {
+            if(!document.images)
+            {
+            return
+            }
+            if(step<5){
+                step++;
+                }
+            else{
+                step=1;
+
+                }
+            document.getElementById('slide').src = image[step].src
+        }
+        function backward()
+        {
+            if(!document.images)
+            {
+            return
+            }
+            if (step>1)
+            {
+                step--;
+            }
+            else{
+                step = 5;
+            }
+            document.getElementById('slide').src = image[step].src
+        }
+</script>
+</body>
+</html>
