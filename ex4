@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <style></style>
+  </head>
+  <body>
+        <script type="text/javascript">
+  
+    function color(){
+    var r = document.getElementsById("r").value;
+    var g = document.getElementsById("g").value;
+    var b = document.getElementsById("b").value;
+    var w =document.getElementsById("w").value;
+    var br = document.getElementsById("br").value;
+    var bg = document.getElementsById("bg").value;
+    var bb = document.getElementsById("bb").value;
+    document.getElementsById('dt').style.borderColor = "rgb("+r+","+g+", "+b+")";
+    document.getElementsById('dt').style.borderWidth = w + "px";
+    document.getElementsById('dt').style.backgroundColor = "rgb ("+br+", "+bg+", "+bb+")";
+    }
+    </script>
+  <p id="dt"> Dummy text </p>
+  <form>
+  Border Red Value:<br>
+  <input type="text" id="r"><br>
+  Border Green Value<br>
+  <input type="text" id="g"><br>
+    Border Blue Value:<br>
+  <input type="text" id="b"><br>
+  Border Width Value<br>
+  <input type="text" id="w"><br>
+    Background Red Value:<br>
+  <input type="text" id="br"><br>
+  Background Green Value<br>
+  <input type="text" id="bg"><br>
+    Background Blue Value<br>
+  <input type="text" id="bb"><br>
+</form>
+<button type="button" onclick = "color()" > Go</button>
+<p> Please enter 0-255 for color values </p>
+    </body>
+</html>
