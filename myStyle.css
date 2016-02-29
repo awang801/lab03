@@ -1,0 +1,29 @@
+body
+{
+        background-image: url(http://media.charlesleifer.com/blog/photos/walrus-lurker.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+p
+{
+    background-color: red;
+    color: white;
+    font-family: arial
+    font-size: 50pt;
+}
+p:hover
+{
+    background-color: red;
+    color: blue
+}
+p.halloween
+{
+    color: orange;
+    background-color: black;
+}
+a:hover
+{
+    background-color: black;
+    color: green;
+}
+
